@@ -1,0 +1,6 @@
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/swig/CMakeFiles/_asat_swig.dir
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/swig/CMakeFiles/_asat_swig_swig_tag.dir
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/lib/CMakeFiles/gnuradio-asat.dir
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/swig/CMakeFiles/pygen_swig_749f0.dir
+/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/swig/CMakeFiles/pygen_swig_751d1.dir
