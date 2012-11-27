@@ -5414,100 +5414,6 @@ SWIG_AsVal_std_complex_Sl_double_Sg_  (PyObject *o, std::complex<double>* val)
 }
 
 
-SWIGINTERN int
-SWIG_AsVal_float (PyObject * obj, float *val)
-{
-  double v;
-  int res = SWIG_AsVal_double (obj, &v);
-  if (SWIG_IsOK(res)) {
-    if ((v < -FLT_MAX || v > FLT_MAX)) {
-      return SWIG_OverflowError;
-    } else {
-      if (val) *val = static_cast< float >(v);
-    }
-  }  
-  return res;
-}
-
-
-SWIGINTERN int
-SWIG_AsVal_std_complex_Sl_float_Sg_ (PyObject *o, std::complex<float> *val)
-{
-  if (PyComplex_Check(o)) {
-    double re = PyComplex_RealAsDouble(o);
-    double im = PyComplex_ImagAsDouble(o);
-    if ((-FLT_MAX <= re && re <= FLT_MAX) && (-FLT_MAX <= im && im <= FLT_MAX)) {
-      if (val) *val = std::complex<float>(static_cast< float >(re),
-				  static_cast< float >(im));
-      return SWIG_OK;
-    } else {
-      return SWIG_OverflowError;
-    }    
-  } else {
-    float re;
-    int res = SWIG_AddCast(SWIG_AsVal_float (o, &re));
-    if (SWIG_IsOK(res)) {
-      if (val) *val = std::complex<float>(re, 0.0);
-      return res;
-    }
-  }
-  return SWIG_TypeError;
-}
-
-
-SWIGINTERNINLINE PyObject*
-SWIG_From_std_complex_Sl_float_Sg_  (/*@SWIG:/usr/share/swig2.0/typemaps/swigmacros.swg,104,%ifcplusplus@*/
-
-const std::complex<float>&
-
-
-
-/*@SWIG@*/ c)
-{
-  return PyComplex_FromDoubles(std::real(c), std::imag(c));
-}
-
-
-namespace swig {
-  template <> struct traits<std::complex<float> > {
-    typedef value_category category;
-    static const char* type_name() { return"std::complex<float>"; }
-  };  
-  template <>  struct traits_asval<std::complex<float> > {   
-    typedef std::complex<float> value_type;
-    static int asval(PyObject *obj, value_type *val) { 
-      return SWIG_AsVal_std_complex_Sl_float_Sg_ (obj, val);
-    }
-  };
-  template <>  struct traits_from<std::complex<float> > {
-    typedef std::complex<float> value_type;
-    static PyObject *from(const value_type& val) {
-      return SWIG_From_std_complex_Sl_float_Sg_  (val);
-    }
-  };
-}
-
-
-      namespace swig {
-	template <>  struct traits<std::vector<std::complex< float >, std::allocator< std::complex< float > > > > {
-	  typedef pointer_category category;
-	  static const char* type_name() {
-	    return "std::vector<" "std::complex< float >" "," "std::allocator< std::complex< float > >" " >";
-	  }
-	};
-      }
-    
-
-      namespace swig {
-	template <>  struct traits<std::vector<std::vector< std::complex< float >,std::allocator< std::complex< float > > >, std::allocator< std::vector< std::complex< float >,std::allocator< std::complex< float > > > > > > {
-	  typedef pointer_category category;
-	  static const char* type_name() {
-	    return "std::vector<" "std::vector< std::complex< float >,std::allocator< std::complex< float > > >" "," "std::allocator< std::vector< std::complex< float >,std::allocator< std::complex< float > > > >" " >";
-	  }
-	};
-      }
-    
-
 SWIGINTERNINLINE PyObject* 
 SWIG_From_unsigned_SS_long_SS_long  (unsigned long long value)
 {
@@ -29811,96 +29717,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_asat_transcv_ff_sptr_finite_acquisition(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< asat_transcv_ff > *arg1 = (boost::shared_ptr< asat_transcv_ff > *) 0 ;
-  size_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  size_t val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "nsamps", NULL 
-  };
-  std::vector< std::complex< float >,std::allocator< std::complex< float > > > result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:asat_transcv_ff_sptr_finite_acquisition",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "asat_transcv_ff_sptr_finite_acquisition" "', argument " "1"" of type '" "boost::shared_ptr< asat_transcv_ff > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< asat_transcv_ff > * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "asat_transcv_ff_sptr_finite_acquisition" "', argument " "2"" of type '" "size_t""'");
-  } 
-  arg2 = static_cast< size_t >(val2);
-  {
-    try {
-      result = (*arg1)->finite_acquisition(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector<std::complex< float >,std::allocator< std::complex< float > > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_asat_transcv_ff_sptr_finite_acquisition_v(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< asat_transcv_ff > *arg1 = (boost::shared_ptr< asat_transcv_ff > *) 0 ;
-  size_t arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  size_t val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "nsamps", NULL 
-  };
-  std::vector< std::vector< std::complex< float >,std::allocator< std::complex< float > > >,std::allocator< std::vector< std::complex< float >,std::allocator< std::complex< float > > > > > result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:asat_transcv_ff_sptr_finite_acquisition_v",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "asat_transcv_ff_sptr_finite_acquisition_v" "', argument " "1"" of type '" "boost::shared_ptr< asat_transcv_ff > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< asat_transcv_ff > * >(argp1);
-  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "asat_transcv_ff_sptr_finite_acquisition_v" "', argument " "2"" of type '" "size_t""'");
-  } 
-  arg2 = static_cast< size_t >(val2);
-  {
-    try {
-      result = (*arg1)->finite_acquisition_v(arg2);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = swig::from(static_cast< std::vector<std::vector< std::complex< float >,std::allocator< std::complex< float > > >,std::allocator< std::vector< std::complex< float >,std::allocator< std::complex< float > > > > > >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_asat_transcv_ff_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< asat_transcv_ff > *arg1 = (boost::shared_ptr< asat_transcv_ff > *) 0 ;
@@ -32022,8 +31838,6 @@ static PyMethodDef SwigMethods[] = {
 		"asat_transcv_ff_sptr_set_user_register(asat_transcv_ff_sptr self, uint8_t addr, uint32_t data, \n"
 		"    size_t mboard = 0)\n"
 		""},
-	 { (char *)"asat_transcv_ff_sptr_finite_acquisition", (PyCFunction) _wrap_asat_transcv_ff_sptr_finite_acquisition, METH_VARARGS | METH_KEYWORDS, (char *)"asat_transcv_ff_sptr_finite_acquisition(asat_transcv_ff_sptr self, size_t nsamps) -> __dummy_6__"},
-	 { (char *)"asat_transcv_ff_sptr_finite_acquisition_v", (PyCFunction) _wrap_asat_transcv_ff_sptr_finite_acquisition_v, METH_VARARGS | METH_KEYWORDS, (char *)"asat_transcv_ff_sptr_finite_acquisition_v(asat_transcv_ff_sptr self, size_t nsamps) -> __dummy_13__"},
 	 { (char *)"asat_transcv_ff_sptr_work", (PyCFunction) _wrap_asat_transcv_ff_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
 		"asat_transcv_ff_sptr_work(asat_transcv_ff_sptr self, int noutput_items, gr_vector_const_void_star input_items, \n"
 		"    gr_vector_void_star output_items) -> int\n"

@@ -230,13 +230,6 @@ public:
 //    write to the user configuration register bus
 //    only exists if user implements custom setting registers in FPGA
 
-    virtual std::vector<std::complex<float> > finite_acquisition(const size_t nsamps) = 0;
-//    convenience function for finite data acquisition
-
-    virtual std::vector<std::vector<std::complex<float> > > finite_acquisition_v(const size_t nsamps) = 0;
-//    multi-channel version of above
-
-
 	~asat_transcv_ff (); //public destructor
 
 

@@ -22,5 +22,7 @@
 ########################################################################
 install(FILES
     asat_api.h
-    asat_transcv_ff.h DESTINATION include/asat
+    asat_transcv_ff.h 
+    DESTINATION ${GR_INCLUDE_DIR}/gnuradio
+    COMPONENT "asat_devel"
 )

@@ -26,7 +26,7 @@
 
 %include <uhd/utils/pimpl.hpp> //             <-- NOT ACTUALLY USED IN CODE, COPIED FROM UHD_SWIG.I
 
-%ignore uhd::dict::operator[]; //ignore warnings about %extend
+
 %include <uhd/types/dict.hpp>
 %template(string_string_dict_t) uhd::dict<std::string, std::string>; //define after dict
 

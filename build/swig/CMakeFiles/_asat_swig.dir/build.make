@@ -97,8 +97,6 @@ _asat_swig_EXTERNAL_OBJECTS =
 swig/_asat_swig.so: swig/CMakeFiles/_asat_swig.dir/asat_swigPYTHON_wrap.cxx.o
 swig/_asat_swig.so: /usr/lib/libpython2.7.so
 swig/_asat_swig.so: lib/libgnuradio-asat.so
-swig/_asat_swig.so: /usr/local/lib/libgruel.so
-swig/_asat_swig.so: /usr/local/lib/libgnuradio-core.so
 swig/_asat_swig.so: swig/CMakeFiles/_asat_swig.dir/build.make
 swig/_asat_swig.so: swig/CMakeFiles/_asat_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module _asat_swig.so"

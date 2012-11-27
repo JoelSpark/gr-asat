@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libgnuradio-asat.so -o libgnuradio-asat.so CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o /usr/local/lib/libgruel.so /usr/local/lib/libgnuradio-core.so -Wl,-rpath,/usr/local/lib: 
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libgnuradio-asat.so -o libgnuradio-asat.so CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o -lgnuradio-core -lgnuradio-uhd 

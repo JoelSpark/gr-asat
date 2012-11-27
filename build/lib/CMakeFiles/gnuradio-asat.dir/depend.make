@@ -16,6 +16,8 @@ lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnurad
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnuradio/gr_sync_block.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnuradio/gr_tags.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnuradio/gr_types.h
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnuradio/gr_uhd_api.h
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gnuradio/gr_uhd_usrp_source.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gruel/api.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gruel/attributes.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gruel/msg_accepter.h
@@ -23,13 +25,28 @@ lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gruel/
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/gruel/pmt_sugar.h
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/config.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/convert.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/deprecated.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/device.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/device_deprecated.ipp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/exception.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/stream.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/clock_config.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/device_addr.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/dict.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/dict.ipp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/io_type.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/metadata.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/ranges.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/ref_vector.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/sensors.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/serial.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/stream_cmd.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/time_spec.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/tune_request.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/types/tune_result.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/usrp/dboard_iface.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/usrp/multi_usrp.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/usrp/subdev_spec.hpp
+lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/utils/pimpl.hpp
 lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o: /usr/local/include/uhd/version.hpp
 

@@ -26,15 +26,15 @@
 #include <uhd/usrp/multi_usrp.hpp>
 
 // includes for list of functions below
-#include <uhd/types/time_spec.hpp>
-#include <uhd/types/stream_cmd.hpp>
-#include <uhd/types/dict.hpp>
-#include <uhd/types/ranges.hpp>
-#include <uhd/types/tune_result.hpp>
-#include <uhd/types/tune_request.hpp>
-#include <uhd/types/sensors.hpp>
-#include <uhd/types/clock_config.hpp>
-#include <uhd/usrp/dboard_iface.hpp>
+#import <uhd/types/time_spec.hpp>
+#import <uhd/types/stream_cmd.hpp>
+#import <uhd/types/dict.hpp>
+#import <uhd/types/ranges.hpp>
+#import <uhd/types/tune_result.hpp>
+#import <uhd/types/tune_request.hpp>
+#import <uhd/types/sensors.hpp>
+#import <uhd/types/clock_config.hpp>
+#import <uhd/usrp/dboard_iface.hpp>
 
 class asat_transcv_ff;
 
@@ -51,8 +51,7 @@ ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
     const uhd::stream_args_t &stream_args
 );
 
-class ASAT_API asat_transcv_ff : virtual public gr_sync_block
-{
+class ASAT_API asat_transcv_ff : virtual public gr_sync_block{
 public:
 
     virtual void set_start_time(const uhd::time_spec_t &time) = 0;
@@ -230,13 +229,6 @@ public:
     virtual void set_user_register(const uint8_t addr, const uint32_t data, size_t mboard = 0) = 0;
 //    write to the user configuration register bus
 //    only exists if user implements custom setting registers in FPGA
-
-    virtual std::vector<std::complex<float> > finite_acquisition(const size_t nsamps) = 0;
-//    convenience function for finite data acquisition
-
-    virtual std::vector<std::vector<std::complex<float> > > finite_acquisition_v(const size_t nsamps) = 0;
-//    multi-channel version of above
-
 
 	~asat_transcv_ff (); //public destructor
 

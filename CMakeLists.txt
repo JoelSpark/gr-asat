@@ -21,7 +21,7 @@
 # Project setup
 ########################################################################
 cmake_minimum_required(VERSION 2.6)
-project(gr-asat CXX)
+project(gr-asat)
 enable_testing()
 
 #select the release build type by default to get optimization flags
@@ -101,14 +101,14 @@ include_directories(
     ${Boost_INCLUDE_DIRS}
     ${GRUEL_INCLUDE_DIRS}
     ${GNURADIO_CORE_INCLUDE_DIRS}
-    ${GR_UHD_INCLUDE_DIRS}
+    ${UHD_INCLUDE_DIRS}
 )
 
 link_directories(
     ${Boost_LIBRARY_DIRS}
     ${GRUEL_LIBRARY_DIRS}
     ${GNURADIO_CORE_LIBRARY_DIRS}
-    ${GR_UHD_INCLUDE_DIRS}
+    ${UHD_LIBRARY_DIRS}
 )
 
 # Set component parameters

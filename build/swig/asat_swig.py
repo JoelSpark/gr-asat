@@ -2003,14 +2003,6 @@ class asat_transcv_ff_sptr(object):
         """set_user_register(self, uint8_t addr, uint32_t data, size_t mboard = 0)"""
         return _asat_swig.asat_transcv_ff_sptr_set_user_register(self, *args, **kwargs)
 
-    def finite_acquisition(self, *args, **kwargs):
-        """finite_acquisition(self, size_t nsamps) -> __dummy_6__"""
-        return _asat_swig.asat_transcv_ff_sptr_finite_acquisition(self, *args, **kwargs)
-
-    def finite_acquisition_v(self, *args, **kwargs):
-        """finite_acquisition_v(self, size_t nsamps) -> __dummy_13__"""
-        return _asat_swig.asat_transcv_ff_sptr_finite_acquisition_v(self, *args, **kwargs)
-
     def work(self, *args, **kwargs):
         """
         work(self, int noutput_items, gr_vector_const_void_star input_items, 

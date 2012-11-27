@@ -123,7 +123,7 @@ def _prepare_asat_swig():
 
 
 ########################################################################
-# Initialize this module with the contents of uhd swig
+# Initialize this module with the contents of asat_swig
 ########################################################################
-_prepare_uhd_swig()
-from uhd_swig import *
+_prepare_asat_swig()
+from asat_swig import *

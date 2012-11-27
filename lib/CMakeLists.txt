@@ -18,12 +18,39 @@
 # Boston, MA 02110-1301, USA.
 
 ########################################################################
+# Setup includes and linker paths
+########################################################################
+include_directories(
+    ${GNURADIO_CORE_INCLUDE_DIRS}
+    ${GR_UHD_INCLUDE_DIRS}
+    ${GR_ASAT_INCLUDE_DIRS}
+)
+
+
+include_directories(${UHD_INCLUDE_DIRS})
+link_directories(${UHD_LIBRARY_DIRS})
+
+include_directories(${ASAT_INCLUDE_DIRS})
+link_directories(${ASAT_LIBRARY_DIRS})
+
+include_directories(${Boost_INCLUDE_DIRS})
+link_directories(${Boost_LIBRARY_DIRS})
+
+########################################################################
 # Setup library
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
-add_library(gnuradio-asat SHARED asat_transcv_ff.cc )
-target_link_libraries(gnuradio-asat ${Boost_LIBRARIES} ${GRUEL_LIBRARIES} ${GNURADIO_CORE_LIBRARIES})
-set_target_properties(gnuradio-asat PROPERTIES DEFINE_SYMBOL "gnuradio_asat_EXPORTS")
+
+list(APPEND asat_libs
+    gnuradio-core
+    gnuradio-uhd
+    ${ASAT_LIBRARIES}
+    ${Boost_LIBRARIES}
+    ${UHD_LIBRARIES}
+)
+
+add_library(gnuradio-asat SHARED asat_transcv_ff.cc)
+target_link_libraries(gnuradio-asat ${asat_libs})
 
 ########################################################################
 # Install built library files
@@ -42,5 +69,4 @@ find_package(Boost COMPONENTS unit_test_framework)
 include(GrTest)
 set(GR_TEST_TARGET_DEPS gnuradio-asat)
 #turn each test cpp file into an executable with an int main() function
-add_definitions(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN)
-
+add_definitions(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN )

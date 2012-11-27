@@ -88,7 +88,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"asat_python\" \"asat_swig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"asat_devel\" \"asat_python\" \"asat_swig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components

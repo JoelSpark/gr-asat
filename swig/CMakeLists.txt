@@ -35,13 +35,13 @@ include(GrPython)
 # Added from UHD Makefile
 ########################################################################
 
-set(GR_SWIG_FLAGS -DGR_HAVE_ASAT) #needed to parse uhd_swig.i
+set(GR_SWIG_FLAGS -DGR_HAVE_ASAT) #needed to parse asat_swig.i
 set(GR_SWIG_TARGET_DEPS core_swig)
 
 ########################################################################
 # Setup swig generation
 ########################################################################
-set(GR_SWIG_INCLUDE_DIRS #added from uhd makefile
+set(GR_SWIG_INCLUDE_DIRS
     ${GR_ASAT_INCLUDE_DIRS}
     ${GR_UHD_INCLUDE_DIRS}
     ${GNURADIO_CORE_SWIG_INCLUDE_DIRS}
@@ -50,15 +50,16 @@ set(GR_SWIG_INCLUDE_DIRS #added from uhd makefile
 set(GR_SWIG_DOC_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
 link_directories(${ASAT_LIBRARY_DIRS})
+link_directories(${UHD_LIBRARY_DIRS})
 set(GR_SWIG_LIBRARIES gnuradio-asat ${ASAT_LIBRARIES})
-set(SWIG_LINK_LIBRARIES gnuradio-asat ${ASAT_LIBRARIES})
 
 GR_SWIG_MAKE(asat_swig asat_swig.i)
 
 ########################################################################
 # Install the build swig module
 ########################################################################
-GR_SWIG_INSTALL(TARGETS asat_swig 
+GR_SWIG_INSTALL(
+    TARGETS asat_swig 
     DESTINATION ${GR_PYTHON_DIR}/gnuradio/asat
     COMPONENT "asat_python"
 )
@@ -73,8 +74,7 @@ install(
 )
 
 GR_PYTHON_INSTALL(
-    FILES
-    __init__.py
+    FILES __init__.py
     DESTINATION ${GR_PYTHON_DIR}/gnuradio/asat
     COMPONENT "asat_python"
 )

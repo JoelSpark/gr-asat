@@ -1,5 +1,5 @@
-/usr/local/include/asat/asat_api.h
-/usr/local/include/asat/asat_transcv_ff.h
+/usr/local/include/gnuradio/asat_api.h
+/usr/local/include/gnuradio/asat_transcv_ff.h
 /usr/local/lib/libgnuradio-asat.so
 /usr/local/lib/python2.7/dist-packages/gnuradio/asat/_asat_swig.so
 /usr/local/lib/python2.7/dist-packages/gnuradio/asat/asat_swig.py

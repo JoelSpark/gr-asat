@@ -77,8 +77,6 @@ gnuradio__asat_OBJECTS = \
 gnuradio__asat_EXTERNAL_OBJECTS =
 
 lib/libgnuradio-asat.so: lib/CMakeFiles/gnuradio-asat.dir/asat_transcv_ff.cc.o
-lib/libgnuradio-asat.so: /usr/local/lib/libgruel.so
-lib/libgnuradio-asat.so: /usr/local/lib/libgnuradio-core.so
 lib/libgnuradio-asat.so: lib/CMakeFiles/gnuradio-asat.dir/build.make
 lib/libgnuradio-asat.so: lib/CMakeFiles/gnuradio-asat.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-asat.so"
