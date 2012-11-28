@@ -39,7 +39,7 @@
 #include <uhd/usrp/dboard_iface.hpp>
 
 #ifndef INCLUDED_ASAT_STREAM_HPP
-namespace asat{
+namespace asat{    
     struct ASAT_API stream_args_t{
         stream_args_t(
             const std::string &cpu = "",
@@ -55,6 +55,7 @@ namespace asat{
     };
 }
 # define INCLUDED_ASAT_STREAM_HPP
+#else
 # define GR_ASAT_USE_STREAM_API
 #endif
 
@@ -65,7 +66,6 @@ ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
         const uhd::io_type_t &io_type,
         size_t num_channels
 );
-
 ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
         const uhd::device_addr_t &device_addr,
         const uhd::stream_args_t &stream_args
