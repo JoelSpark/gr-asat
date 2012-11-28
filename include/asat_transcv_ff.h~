@@ -26,15 +26,17 @@
 #include <uhd/usrp/multi_usrp.hpp>
 
 // includes for list of functions below
-#import <uhd/types/time_spec.hpp>
-#import <uhd/types/stream_cmd.hpp>
-#import <uhd/types/dict.hpp>
-#import <uhd/types/ranges.hpp>
-#import <uhd/types/tune_result.hpp>
-#import <uhd/types/tune_request.hpp>
-#import <uhd/types/sensors.hpp>
-#import <uhd/types/clock_config.hpp>
-#import <uhd/usrp/dboard_iface.hpp>
+#include <uhd/types/time_spec.hpp>
+#include <uhd/types/stream_cmd.hpp>
+#include <uhd/types/dict.hpp>
+#include <uhd/types/ranges.hpp>
+#include <uhd/types/tune_result.hpp>
+#include <uhd/types/tune_request.hpp>
+#include <uhd/types/device_addr.hpp>
+#include <uhd/stream.hpp>
+#include <uhd/types/sensors.hpp>
+#include <uhd/types/clock_config.hpp>
+#include <uhd/usrp/dboard_iface.hpp>
 
 class asat_transcv_ff;
 

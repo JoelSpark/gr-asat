@@ -215,7 +215,7 @@ SWIG_EXECUTABLE:FILEPATH=/usr/bin/swig2.0
 SWIG_VERSION:STRING=2.0.4
 
 //Dependencies for the target
-_asat_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-asat;
+_asat_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-asat;general;uhd;
 
 //Dependencies for the target
 gnuradio-asat_LIB_DEPENDS:STATIC=general;gnuradio-core;general;gnuradio-uhd;

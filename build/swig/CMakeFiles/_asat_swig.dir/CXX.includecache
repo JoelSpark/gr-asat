@@ -29,6 +29,10 @@ uhd/types/tune_result.hpp
 -
 uhd/types/tune_request.hpp
 -
+uhd/types/device_addr.hpp
+-
+uhd/stream.hpp
+-
 uhd/types/sensors.hpp
 -
 uhd/types/clock_config.hpp

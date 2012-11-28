@@ -51,7 +51,7 @@ set(GR_SWIG_DOC_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 
 link_directories(${ASAT_LIBRARY_DIRS})
 link_directories(${UHD_LIBRARY_DIRS})
-set(GR_SWIG_LIBRARIES gnuradio-asat ${ASAT_LIBRARIES})
+set(GR_SWIG_LIBRARIES gnuradio-asat uhd ${ASAT_LIBRARIES})
 
 GR_SWIG_MAKE(asat_swig asat_swig.i)
 

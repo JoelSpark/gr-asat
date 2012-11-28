@@ -32,6 +32,8 @@
 #include <uhd/types/ranges.hpp>
 #include <uhd/types/tune_result.hpp>
 #include <uhd/types/tune_request.hpp>
+#include <uhd/types/device_addr.hpp>
+#include <uhd/stream.hpp>
 #include <uhd/types/sensors.hpp>
 #include <uhd/types/clock_config.hpp>
 #include <uhd/usrp/dboard_iface.hpp>
