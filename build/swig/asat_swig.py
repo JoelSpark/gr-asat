@@ -2133,6 +2133,13 @@ def get_version_string():
   """get_version_string() -> string"""
   return _asat_swig.get_version_string()
 
+
+def transcv_ff(*args):
+  """
+    transcv_ff(device_addr_t device_addr, io_type_t io_type, size_t num_channels) -> asat_transcv_ff_sptr
+    transcv_ff(device_addr_t device_addr, uhd::stream_args_t stream_args) -> asat_transcv_ff_sptr
+    """
+  return _asat_swig.transcv_ff(*args)
 cvar = _asat_swig.cvar
 ALL_MBOARDS = cvar.ALL_MBOARDS
 

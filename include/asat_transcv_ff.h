@@ -60,20 +60,19 @@ namespace asat{
 
 class asat_transcv_ff;
 
-typedef boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
+ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
         const uhd::device_addr_t &device_addr,
         const uhd::io_type_t &io_type,
         size_t num_channels
 );
 
-typedef boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
+ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
         const uhd::device_addr_t &device_addr,
         const uhd::stream_args_t &stream_args
 );
 
 
 class ASAT_API asat_transcv_ff : virtual public gr_sync_block{
-
 public:
 
     virtual void set_start_time(const uhd::time_spec_t &time) = 0;

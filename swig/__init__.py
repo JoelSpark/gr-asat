@@ -96,10 +96,6 @@ def _prepare_asat_swig():
         return map(to_pythonized_dev_addr, asat_swig.find_devices_raw(*args, **kwargs))
     setattr(asat_swig, 'find_devices', find_devices)
 
-    #Aliases for deprecated constructors
-    setattr(asat_swig, 'single_usrp_source', asat_swig.asat_transcv_ff)
-    setattr(asat_swig, 'multi_usrp_source', asat_swig.asat_transcv_ff)
-
 #Cast constructor args (FIXME swig handle overloads?)
     for attr in ('transcv_ff'):
         def constructor_factory(old_constructor):
@@ -120,6 +116,12 @@ def _prepare_asat_swig():
                 return old_constructor(*args)
             return constructor_interceptor
         setattr(asat_swig, attr, constructor_factory(getattr(asat_swig, attr)))
+
+
+    #Aliases for deprecated constructors
+    setattr(asat_swig, 'single_usrp_source', asat_swig.asat_transcv_ff)
+    setattr(asat_swig, 'multi_usrp_source', asat_swig.asat_transcv_ff)
+
 
 ########################################################################
 # Initialize this module with the contents of asat_swig
