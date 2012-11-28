@@ -38,22 +38,42 @@
 #include <uhd/types/clock_config.hpp>
 #include <uhd/usrp/dboard_iface.hpp>
 
+#ifndef INCLUDED_ASAT_STREAM_HPP
+namespace asat{
+    struct ASAT_API stream_args_t{
+        stream_args_t(
+            const std::string &cpu = "",
+            const std::string &otw = ""
+        ){
+            cpu_format = cpu;
+            otw_format = otw;
+        }
+        std::string cpu_format;
+        std::string otw_format;
+        uhd::device_addr_t args;
+        std::vector<size_t> channels;
+    };
+}
+# define INCLUDED_ASAT_STREAM_HPP
+# define GR_ASAT_USE_STREAM_API
+#endif
+
 class asat_transcv_ff;
 
-// Make a new USRP transceiver block
-
-ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
-    const uhd::device_addr_t &device_addr,
-    const uhd::io_type_t &io_type,
-    size_t num_channels
+typedef boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
+        const uhd::device_addr_t &device_addr,
+        const uhd::io_type_t &io_type,
+        size_t num_channels
 );
 
-ASAT_API boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
-    const uhd::device_addr_t &device_addr,
-    const uhd::stream_args_t &stream_args
+typedef boost::shared_ptr<asat_transcv_ff> asat_make_transcv_ff(
+        const uhd::device_addr_t &device_addr,
+        const uhd::stream_args_t &stream_args
 );
+
 
 class ASAT_API asat_transcv_ff : virtual public gr_sync_block{
+
 public:
 
     virtual void set_start_time(const uhd::time_spec_t &time) = 0;
@@ -232,12 +252,6 @@ public:
 //    write to the user configuration register bus
 //    only exists if user implements custom setting registers in FPGA
 
-	~asat_transcv_ff (); //public destructor
-
-
-  int work (int noutput_items,
-		    gr_vector_const_void_star &input_items,
-		    gr_vector_void_star &output_items);
 };
 
 #endif /* INCLUDED_ASAT_TRANSCV_FF_H */

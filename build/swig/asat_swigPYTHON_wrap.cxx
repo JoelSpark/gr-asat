@@ -2943,85 +2943,83 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_allocator_type swig_types[0]
-#define SWIGTYPE_p_asat_transcv_ff swig_types[1]
-#define SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t swig_types[2]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[3]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[4]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[5]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[6]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[7]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[8]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[9]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[12]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[13]
-#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[14]
-#define SWIGTYPE_p_boost__shared_ptrT_uhd__usrp__dboard_iface_t swig_types[15]
-#define SWIGTYPE_p_char swig_types[16]
-#define SWIGTYPE_p_difference_type swig_types[17]
-#define SWIGTYPE_p_gr_basic_block swig_types[18]
-#define SWIGTYPE_p_gr_block swig_types[19]
-#define SWIGTYPE_p_gr_hier_block2 swig_types[20]
-#define SWIGTYPE_p_gr_sync_block swig_types[21]
-#define SWIGTYPE_p_gr_sync_decimator swig_types[22]
-#define SWIGTYPE_p_gr_sync_interpolator swig_types[23]
-#define SWIGTYPE_p_gr_top_block swig_types[24]
-#define SWIGTYPE_p_gr_vector_const_void_star swig_types[25]
-#define SWIGTYPE_p_gr_vector_void_star swig_types[26]
-#define SWIGTYPE_p_gruel__rt_status_t swig_types[27]
-#define SWIGTYPE_p_int swig_types[28]
-#define SWIGTYPE_p_long_long swig_types[29]
-#define SWIGTYPE_p_p_PyObject swig_types[30]
-#define SWIGTYPE_p_short swig_types[31]
-#define SWIGTYPE_p_signed_char swig_types[32]
-#define SWIGTYPE_p_size_type swig_types[33]
-#define SWIGTYPE_p_special_props_t swig_types[34]
-#define SWIGTYPE_p_sptr swig_types[35]
-#define SWIGTYPE_p_std__allocatorT_size_t_t swig_types[36]
-#define SWIGTYPE_p_std__allocatorT_std__string_t swig_types[37]
-#define SWIGTYPE_p_std__allocatorT_uhd__device_addr_t_t swig_types[38]
-#define SWIGTYPE_p_std__allocatorT_uhd__range_t_t swig_types[39]
-#define SWIGTYPE_p_std__allocatorT_unsigned_char_t swig_types[40]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[41]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[42]
-#define SWIGTYPE_p_std__invalid_argument swig_types[43]
-#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t swig_types[44]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[45]
-#define SWIGTYPE_p_std__vectorT_uhd__device_addr_t_std__allocatorT_uhd__device_addr_t_t_t swig_types[46]
-#define SWIGTYPE_p_std__vectorT_uhd__range_t_std__allocatorT_uhd__range_t_t_t swig_types[47]
-#define SWIGTYPE_p_std__vectorT_unsigned_char_std__allocatorT_unsigned_char_t_t swig_types[48]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[49]
-#define SWIGTYPE_p_time_t swig_types[50]
-#define SWIGTYPE_p_uhd__async_metadata_t swig_types[51]
-#define SWIGTYPE_p_uhd__clock_config_t swig_types[52]
-#define SWIGTYPE_p_uhd__device_addr_t swig_types[53]
-#define SWIGTYPE_p_uhd__dictT_std__string_std__string_t swig_types[54]
-#define SWIGTYPE_p_uhd__i2c_iface swig_types[55]
-#define SWIGTYPE_p_uhd__io_type_t swig_types[56]
-#define SWIGTYPE_p_uhd__meta_range_t swig_types[57]
-#define SWIGTYPE_p_uhd__range_t swig_types[58]
-#define SWIGTYPE_p_uhd__rx_metadata_t swig_types[59]
-#define SWIGTYPE_p_uhd__sensor_value_t swig_types[60]
-#define SWIGTYPE_p_uhd__spi_config_t swig_types[61]
-#define SWIGTYPE_p_uhd__spi_iface swig_types[62]
-#define SWIGTYPE_p_uhd__stream_args_t swig_types[63]
-#define SWIGTYPE_p_uhd__stream_cmd_t swig_types[64]
-#define SWIGTYPE_p_uhd__time_spec_t swig_types[65]
-#define SWIGTYPE_p_uhd__tune_request_t swig_types[66]
-#define SWIGTYPE_p_uhd__tune_result_t swig_types[67]
-#define SWIGTYPE_p_uhd__tx_metadata_t swig_types[68]
-#define SWIGTYPE_p_uhd__uart_iface swig_types[69]
-#define SWIGTYPE_p_uhd__usrp__dboard_iface swig_types[70]
-#define SWIGTYPE_p_uhd__usrp__dboard_iface_special_props_t swig_types[71]
-#define SWIGTYPE_p_uhd__usrp__multi_usrp__sptr swig_types[72]
-#define SWIGTYPE_p_unsigned_char swig_types[73]
-#define SWIGTYPE_p_unsigned_int swig_types[74]
-#define SWIGTYPE_p_unsigned_long_long swig_types[75]
-#define SWIGTYPE_p_unsigned_short swig_types[76]
-#define SWIGTYPE_p_value_type swig_types[77]
-static swig_type_info *swig_types[79];
-static swig_module_info swig_module = {swig_types, 78, 0, 0, 0, 0};
+#define SWIGTYPE_p_asat__stream_args_t swig_types[1]
+#define SWIGTYPE_p_asat_transcv_ff swig_types[2]
+#define SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t swig_types[3]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_basic_block_t swig_types[4]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_detail_t swig_types[5]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_block_t swig_types[6]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_reader_t swig_types[7]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_buffer_t swig_types[8]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_dispatcher_t swig_types[9]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_hier_block2_t swig_types[10]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_io_signature_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_message_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_msg_queue_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_single_threaded_scheduler_t swig_types[14]
+#define SWIGTYPE_p_boost__shared_ptrT_gr_top_block_t swig_types[15]
+#define SWIGTYPE_p_boost__shared_ptrT_uhd__usrp__dboard_iface_t swig_types[16]
+#define SWIGTYPE_p_char swig_types[17]
+#define SWIGTYPE_p_difference_type swig_types[18]
+#define SWIGTYPE_p_gr_basic_block swig_types[19]
+#define SWIGTYPE_p_gr_block swig_types[20]
+#define SWIGTYPE_p_gr_hier_block2 swig_types[21]
+#define SWIGTYPE_p_gr_sync_block swig_types[22]
+#define SWIGTYPE_p_gr_sync_decimator swig_types[23]
+#define SWIGTYPE_p_gr_sync_interpolator swig_types[24]
+#define SWIGTYPE_p_gr_top_block swig_types[25]
+#define SWIGTYPE_p_gruel__rt_status_t swig_types[26]
+#define SWIGTYPE_p_int swig_types[27]
+#define SWIGTYPE_p_long_long swig_types[28]
+#define SWIGTYPE_p_p_PyObject swig_types[29]
+#define SWIGTYPE_p_short swig_types[30]
+#define SWIGTYPE_p_signed_char swig_types[31]
+#define SWIGTYPE_p_size_type swig_types[32]
+#define SWIGTYPE_p_special_props_t swig_types[33]
+#define SWIGTYPE_p_sptr swig_types[34]
+#define SWIGTYPE_p_std__allocatorT_size_t_t swig_types[35]
+#define SWIGTYPE_p_std__allocatorT_std__string_t swig_types[36]
+#define SWIGTYPE_p_std__allocatorT_uhd__device_addr_t_t swig_types[37]
+#define SWIGTYPE_p_std__allocatorT_uhd__range_t_t swig_types[38]
+#define SWIGTYPE_p_std__allocatorT_unsigned_char_t swig_types[39]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[40]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[41]
+#define SWIGTYPE_p_std__invalid_argument swig_types[42]
+#define SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t swig_types[43]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[44]
+#define SWIGTYPE_p_std__vectorT_uhd__device_addr_t_std__allocatorT_uhd__device_addr_t_t_t swig_types[45]
+#define SWIGTYPE_p_std__vectorT_uhd__range_t_std__allocatorT_uhd__range_t_t_t swig_types[46]
+#define SWIGTYPE_p_std__vectorT_unsigned_char_std__allocatorT_unsigned_char_t_t swig_types[47]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[48]
+#define SWIGTYPE_p_time_t swig_types[49]
+#define SWIGTYPE_p_uhd__async_metadata_t swig_types[50]
+#define SWIGTYPE_p_uhd__clock_config_t swig_types[51]
+#define SWIGTYPE_p_uhd__device_addr_t swig_types[52]
+#define SWIGTYPE_p_uhd__dictT_std__string_std__string_t swig_types[53]
+#define SWIGTYPE_p_uhd__i2c_iface swig_types[54]
+#define SWIGTYPE_p_uhd__io_type_t swig_types[55]
+#define SWIGTYPE_p_uhd__meta_range_t swig_types[56]
+#define SWIGTYPE_p_uhd__range_t swig_types[57]
+#define SWIGTYPE_p_uhd__rx_metadata_t swig_types[58]
+#define SWIGTYPE_p_uhd__sensor_value_t swig_types[59]
+#define SWIGTYPE_p_uhd__spi_config_t swig_types[60]
+#define SWIGTYPE_p_uhd__spi_iface swig_types[61]
+#define SWIGTYPE_p_uhd__stream_cmd_t swig_types[62]
+#define SWIGTYPE_p_uhd__time_spec_t swig_types[63]
+#define SWIGTYPE_p_uhd__tune_request_t swig_types[64]
+#define SWIGTYPE_p_uhd__tune_result_t swig_types[65]
+#define SWIGTYPE_p_uhd__tx_metadata_t swig_types[66]
+#define SWIGTYPE_p_uhd__uart_iface swig_types[67]
+#define SWIGTYPE_p_uhd__usrp__dboard_iface swig_types[68]
+#define SWIGTYPE_p_uhd__usrp__dboard_iface_special_props_t swig_types[69]
+#define SWIGTYPE_p_uhd__usrp__multi_usrp__sptr swig_types[70]
+#define SWIGTYPE_p_unsigned_char swig_types[71]
+#define SWIGTYPE_p_unsigned_int swig_types[72]
+#define SWIGTYPE_p_unsigned_long_long swig_types[73]
+#define SWIGTYPE_p_unsigned_short swig_types[74]
+#define SWIGTYPE_p_value_type swig_types[75]
+static swig_type_info *swig_types[77];
+static swig_module_info swig_module = {swig_types, 76, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -4407,7 +4405,7 @@ namespace swig
 }
 
 
-#include "asat_transcv_ff.h"
+#include <asat_transcv_ff.h>
 
 
 SWIGINTERN swig_type_info*
@@ -29717,75 +29715,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_asat_transcv_ff_sptr_work(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
-  PyObject *resultobj = 0;
-  boost::shared_ptr< asat_transcv_ff > *arg1 = (boost::shared_ptr< asat_transcv_ff > *) 0 ;
-  int arg2 ;
-  gr_vector_const_void_star *arg3 = 0 ;
-  gr_vector_void_star *arg4 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  void *argp3 = 0 ;
-  int res3 = 0 ;
-  void *argp4 = 0 ;
-  int res4 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  PyObject * obj3 = 0 ;
-  char *  kwnames[] = {
-    (char *) "self",(char *) "noutput_items",(char *) "input_items",(char *) "output_items", NULL 
-  };
-  int result;
-  
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOOO:asat_transcv_ff_sptr_work",kwnames,&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "asat_transcv_ff_sptr_work" "', argument " "1"" of type '" "boost::shared_ptr< asat_transcv_ff > *""'"); 
-  }
-  arg1 = reinterpret_cast< boost::shared_ptr< asat_transcv_ff > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "asat_transcv_ff_sptr_work" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_gr_vector_const_void_star,  0 );
-  if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "asat_transcv_ff_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
-  }
-  if (!argp3) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "asat_transcv_ff_sptr_work" "', argument " "3"" of type '" "gr_vector_const_void_star &""'"); 
-  }
-  arg3 = reinterpret_cast< gr_vector_const_void_star * >(argp3);
-  res4 = SWIG_ConvertPtr(obj3, &argp4, SWIGTYPE_p_gr_vector_void_star,  0 );
-  if (!SWIG_IsOK(res4)) {
-    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "asat_transcv_ff_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
-  }
-  if (!argp4) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "asat_transcv_ff_sptr_work" "', argument " "4"" of type '" "gr_vector_void_star &""'"); 
-  }
-  arg4 = reinterpret_cast< gr_vector_void_star * >(argp4);
-  {
-    try {
-      result = (int)(*arg1)->work(arg2,*arg3,*arg4);
-    }
-    catch(std::exception &e) {
-      SWIG_exception(SWIG_RuntimeError, e.what());
-    }
-    catch(...) {
-      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
-    }
-    
-  }
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_asat_transcv_ff_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   boost::shared_ptr< asat_transcv_ff > *arg1 = (boost::shared_ptr< asat_transcv_ff > *) 0 ;
@@ -30878,47 +30807,51 @@ SWIGINTERN PyObject *asat_transcv_ff_sptr_swigregister(PyObject *SWIGUNUSEDPARM(
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_transcv_ff__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_stream_args_t(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  uhd::device_addr_t *arg1 = 0 ;
-  uhd::io_type_t *arg2 = 0 ;
-  size_t arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  size_t val3 ;
-  int ecode3 = 0 ;
+  std::string const &arg1_defvalue = "" ;
+  std::string *arg1 = (std::string *) &arg1_defvalue ;
+  std::string const &arg2_defvalue = "" ;
+  std::string *arg2 = (std::string *) &arg2_defvalue ;
+  int res1 = SWIG_OLDOBJ ;
+  int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  boost::shared_ptr< asat_transcv_ff > result;
+  char *  kwnames[] = {
+    (char *) "cpu",(char *) "otw", NULL 
+  };
+  asat::stream_args_t *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"transcv_ff",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_uhd__device_addr_t,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "transcv_ff" "', argument " "1"" of type '" "uhd::device_addr_t const &""'"); 
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"|OO:new_stream_args_t",kwnames,&obj0,&obj1)) SWIG_fail;
+  if (obj0) {
+    {
+      std::string *ptr = (std::string *)0;
+      res1 = SWIG_AsPtr_std_string(obj0, &ptr);
+      if (!SWIG_IsOK(res1)) {
+        SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_stream_args_t" "', argument " "1"" of type '" "std::string const &""'"); 
+      }
+      if (!ptr) {
+        SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_stream_args_t" "', argument " "1"" of type '" "std::string const &""'"); 
+      }
+      arg1 = ptr;
+    }
   }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "transcv_ff" "', argument " "1"" of type '" "uhd::device_addr_t const &""'"); 
+  if (obj1) {
+    {
+      std::string *ptr = (std::string *)0;
+      res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+      if (!SWIG_IsOK(res2)) {
+        SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_stream_args_t" "', argument " "2"" of type '" "std::string const &""'"); 
+      }
+      if (!ptr) {
+        SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_stream_args_t" "', argument " "2"" of type '" "std::string const &""'"); 
+      }
+      arg2 = ptr;
+    }
   }
-  arg1 = reinterpret_cast< uhd::device_addr_t * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_uhd__io_type_t,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "transcv_ff" "', argument " "2"" of type '" "uhd::io_type_t const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "transcv_ff" "', argument " "2"" of type '" "uhd::io_type_t const &""'"); 
-  }
-  arg2 = reinterpret_cast< uhd::io_type_t * >(argp2);
-  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "transcv_ff" "', argument " "3"" of type '" "size_t""'");
-  } 
-  arg3 = static_cast< size_t >(val3);
   {
     try {
-      result = asat_make_transcv_ff((uhd::device_addr_t const &)*arg1,(uhd::io_type_t const &)*arg2,arg3);
+      result = (asat::stream_args_t *)new asat::stream_args_t((std::string const &)*arg1,(std::string const &)*arg2);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -30928,45 +30861,255 @@ SWIGINTERN PyObject *_wrap_transcv_ff__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new boost::shared_ptr< asat_transcv_ff >(static_cast< const boost::shared_ptr< asat_transcv_ff >& >(result))), SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_asat__stream_args_t, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_cpu_format_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_cpu_format_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_cpu_format_set" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "stream_args_t_cpu_format_set" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "stream_args_t_cpu_format_set" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->cpu_format = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_cpu_format_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_cpu_format_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_cpu_format_get" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  result = (std::string *) & ((arg1)->cpu_format);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_transcv_ff__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_stream_args_t_otw_format_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  uhd::device_addr_t *arg1 = 0 ;
-  uhd::stream_args_t *arg2 = 0 ;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_otw_format_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_otw_format_set" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "stream_args_t_otw_format_set" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "stream_args_t_otw_format_set" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->otw_format = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_otw_format_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_otw_format_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_otw_format_get" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  result = (std::string *) & ((arg1)->otw_format);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_args_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  uhd::device_addr_t *arg2 = (uhd::device_addr_t *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  boost::shared_ptr< asat_transcv_ff > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"transcv_ff",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_uhd__device_addr_t,  0  | 0);
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_args_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "transcv_ff" "', argument " "1"" of type '" "uhd::device_addr_t const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_args_set" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
   }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "transcv_ff" "', argument " "1"" of type '" "uhd::device_addr_t const &""'"); 
-  }
-  arg1 = reinterpret_cast< uhd::device_addr_t * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_uhd__stream_args_t,  0  | 0);
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_uhd__device_addr_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "transcv_ff" "', argument " "2"" of type '" "uhd::stream_args_t const &""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "stream_args_t_args_set" "', argument " "2"" of type '" "uhd::device_addr_t *""'"); 
   }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "transcv_ff" "', argument " "2"" of type '" "uhd::stream_args_t const &""'"); 
+  arg2 = reinterpret_cast< uhd::device_addr_t * >(argp2);
+  if (arg1) (arg1)->args = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_args_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  uhd::device_addr_t *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_args_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_args_get" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
   }
-  arg2 = reinterpret_cast< uhd::stream_args_t * >(argp2);
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  result = (uhd::device_addr_t *)& ((arg1)->args);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_uhd__device_addr_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_channels_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  std::vector< size_t,std::allocator< size_t > > *arg2 = (std::vector< size_t,std::allocator< size_t > > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_channels_set",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_channels_set" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "stream_args_t_channels_set" "', argument " "2"" of type '" "std::vector< size_t,std::allocator< size_t > > *""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< size_t,std::allocator< size_t > > * >(argp2);
+  if (arg1) (arg1)->channels = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_stream_args_t_channels_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< size_t,std::allocator< size_t > > *result = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"stream_args_t_channels_get",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "stream_args_t_channels_get" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
+  result = (std::vector< size_t,std::allocator< size_t > > *)& ((arg1)->channels);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_size_t_std__allocatorT_size_t_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_stream_args_t(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  asat::stream_args_t *arg1 = (asat::stream_args_t *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if(!PyArg_UnpackTuple(args,(char *)"delete_stream_args_t",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_asat__stream_args_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_stream_args_t" "', argument " "1"" of type '" "asat::stream_args_t *""'"); 
+  }
+  arg1 = reinterpret_cast< asat::stream_args_t * >(argp1);
   {
     try {
-      result = asat_make_transcv_ff((uhd::device_addr_t const &)*arg1,(uhd::stream_args_t const &)*arg2);
+      delete arg1;
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -30976,62 +31119,19 @@ SWIGINTERN PyObject *_wrap_transcv_ff__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new boost::shared_ptr< asat_transcv_ff >(static_cast< const boost::shared_ptr< asat_transcv_ff >& >(result))), SWIGTYPE_p_boost__shared_ptrT_asat_transcv_ff_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_transcv_ff(PyObject *self, PyObject *args) {
-  int argc;
-  PyObject *argv[4];
-  int ii;
-  
-  if (!PyTuple_Check(args)) SWIG_fail;
-  argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
-    argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 2) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_uhd__device_addr_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_uhd__stream_args_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        return _wrap_transcv_ff__SWIG_1(self, args);
-      }
-    }
-  }
-  if (argc == 3) {
-    int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_uhd__device_addr_t, 0);
-    _v = SWIG_CheckState(res);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_uhd__io_type_t, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        {
-          int res = SWIG_AsVal_size_t(argv[2], NULL);
-          _v = SWIG_CheckState(res);
-        }
-        if (_v) {
-          return _wrap_transcv_ff__SWIG_0(self, args);
-        }
-      }
-    }
-  }
-  
-fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'transcv_ff'.\n"
-    "  Possible C/C++ prototypes are:\n"
-    "    asat_make_transcv_ff(uhd::device_addr_t const &,uhd::io_type_t const &,size_t)\n"
-    "    asat_make_transcv_ff(uhd::device_addr_t const &,uhd::stream_args_t const &)\n");
-  return 0;
+SWIGINTERN PyObject *stream_args_t_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_asat__stream_args_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
 }
-
 
 SWIGINTERN PyObject *_wrap_find_devices_raw(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
@@ -31838,10 +31938,6 @@ static PyMethodDef SwigMethods[] = {
 		"asat_transcv_ff_sptr_set_user_register(asat_transcv_ff_sptr self, uint8_t addr, uint32_t data, \n"
 		"    size_t mboard = 0)\n"
 		""},
-	 { (char *)"asat_transcv_ff_sptr_work", (PyCFunction) _wrap_asat_transcv_ff_sptr_work, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"asat_transcv_ff_sptr_work(asat_transcv_ff_sptr self, int noutput_items, gr_vector_const_void_star input_items, \n"
-		"    gr_vector_void_star output_items) -> int\n"
-		""},
 	 { (char *)"asat_transcv_ff_sptr_history", _wrap_asat_transcv_ff_sptr_history, METH_VARARGS, (char *)"asat_transcv_ff_sptr_history(asat_transcv_ff_sptr self) -> unsigned int"},
 	 { (char *)"asat_transcv_ff_sptr_output_multiple", _wrap_asat_transcv_ff_sptr_output_multiple, METH_VARARGS, (char *)"asat_transcv_ff_sptr_output_multiple(asat_transcv_ff_sptr self) -> int"},
 	 { (char *)"asat_transcv_ff_sptr_relative_rate", _wrap_asat_transcv_ff_sptr_relative_rate, METH_VARARGS, (char *)"asat_transcv_ff_sptr_relative_rate(asat_transcv_ff_sptr self) -> double"},
@@ -31872,10 +31968,17 @@ static PyMethodDef SwigMethods[] = {
 		"asat_transcv_ff_sptr_set_min_output_buffer(asat_transcv_ff_sptr self, int port, long min_output_buffer)\n"
 		""},
 	 { (char *)"asat_transcv_ff_sptr_swigregister", asat_transcv_ff_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"transcv_ff", _wrap_transcv_ff, METH_VARARGS, (char *)"\n"
-		"transcv_ff(device_addr_t device_addr, io_type_t io_type, size_t num_channels) -> asat_transcv_ff_sptr\n"
-		"transcv_ff(device_addr_t device_addr, uhd::stream_args_t stream_args) -> asat_transcv_ff_sptr\n"
-		""},
+	 { (char *)"new_stream_args_t", (PyCFunction) _wrap_new_stream_args_t, METH_VARARGS | METH_KEYWORDS, (char *)"new_stream_args_t(string cpu = \"\", string otw = \"\") -> stream_args_t"},
+	 { (char *)"stream_args_t_cpu_format_set", _wrap_stream_args_t_cpu_format_set, METH_VARARGS, (char *)"stream_args_t_cpu_format_set(stream_args_t self, string cpu_format)"},
+	 { (char *)"stream_args_t_cpu_format_get", _wrap_stream_args_t_cpu_format_get, METH_VARARGS, (char *)"stream_args_t_cpu_format_get(stream_args_t self) -> string"},
+	 { (char *)"stream_args_t_otw_format_set", _wrap_stream_args_t_otw_format_set, METH_VARARGS, (char *)"stream_args_t_otw_format_set(stream_args_t self, string otw_format)"},
+	 { (char *)"stream_args_t_otw_format_get", _wrap_stream_args_t_otw_format_get, METH_VARARGS, (char *)"stream_args_t_otw_format_get(stream_args_t self) -> string"},
+	 { (char *)"stream_args_t_args_set", _wrap_stream_args_t_args_set, METH_VARARGS, (char *)"stream_args_t_args_set(stream_args_t self, device_addr_t args)"},
+	 { (char *)"stream_args_t_args_get", _wrap_stream_args_t_args_get, METH_VARARGS, (char *)"stream_args_t_args_get(stream_args_t self) -> device_addr_t"},
+	 { (char *)"stream_args_t_channels_set", _wrap_stream_args_t_channels_set, METH_VARARGS, (char *)"stream_args_t_channels_set(stream_args_t self, size_vector_t channels)"},
+	 { (char *)"stream_args_t_channels_get", _wrap_stream_args_t_channels_get, METH_VARARGS, (char *)"stream_args_t_channels_get(stream_args_t self) -> size_vector_t"},
+	 { (char *)"delete_stream_args_t", _wrap_delete_stream_args_t, METH_VARARGS, (char *)"delete_stream_args_t(stream_args_t self)"},
+	 { (char *)"stream_args_t_swigregister", stream_args_t_swigregister, METH_VARARGS, NULL},
 	 { (char *)"find_devices_raw", (PyCFunction) _wrap_find_devices_raw, METH_VARARGS | METH_KEYWORDS, (char *)"find_devices_raw(device_addr_t dev_addr = uhd::device_addr_t()) -> device_addrs_t"},
 	 { (char *)"get_version_string", _wrap_get_version_string, METH_VARARGS, (char *)"get_version_string() -> string"},
 	 { NULL, NULL, 0, NULL }
@@ -31936,6 +32039,7 @@ static void *_p_gr_sync_interpolatorTo_p_gr_sync_block(void *x, int *SWIGUNUSEDP
     return (void *)((gr_sync_block *)  ((gr_sync_interpolator *) x));
 }
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_asat__stream_args_t = {"_p_asat__stream_args_t", "asat::stream_args_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_asat_transcv_ff = {"_p_asat_transcv_ff", "asat_transcv_ff *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_asat_transcv_ff_t = {"_p_boost__shared_ptrT_asat_transcv_ff_t", "boost::shared_ptr< asat_transcv_ff > *|asat_transcv_ff_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr_basic_block_t = {"_p_boost__shared_ptrT_gr_basic_block_t", "boost::shared_ptr< gr_basic_block > *|gr_basic_block_sptr *", 0, 0, (void*)0, 0};
@@ -31960,8 +32064,6 @@ static swig_type_info _swigt__p_gr_sync_interpolator = {"_p_gr_sync_interpolator
 static swig_type_info _swigt__p_gr_top_block = {"_p_gr_top_block", 0, 0, 0, 0, 0};
 static swig_type_info _swigt__p_gr_block = {"_p_gr_block", "gr_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr_sync_block = {"_p_gr_sync_block", "gr_sync_block *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gr_vector_const_void_star = {"_p_gr_vector_const_void_star", "gr_vector_const_void_star *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gr_vector_void_star = {"_p_gr_vector_void_star", "gr_vector_void_star *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gruel__rt_status_t = {"_p_gruel__rt_status_t", "enum gruel::rt_status_t *|gruel::rt_status_t *|gr_rt_status_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "intptr_t *|int *|int_least32_t *|int_fast32_t *|int32_t *|int_fast16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "int_least64_t *|int_fast64_t *|int64_t *|long long *|intmax_t *", 0, 0, (void*)0, 0};
@@ -31998,7 +32100,6 @@ static swig_type_info _swigt__p_uhd__rx_metadata_t = {"_p_uhd__rx_metadata_t", "
 static swig_type_info _swigt__p_uhd__sensor_value_t = {"_p_uhd__sensor_value_t", "uhd::sensor_value_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uhd__spi_config_t = {"_p_uhd__spi_config_t", "uhd::spi_config_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uhd__spi_iface = {"_p_uhd__spi_iface", "uhd::spi_iface *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_uhd__stream_args_t = {"_p_uhd__stream_args_t", "uhd::stream_args_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uhd__stream_cmd_t = {"_p_uhd__stream_cmd_t", "uhd::stream_cmd_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uhd__time_spec_t = {"_p_uhd__time_spec_t", "uhd::time_spec_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_uhd__tune_request_t = {"_p_uhd__tune_request_t", "uhd::tune_request_t *", 0, 0, (void*)0, 0};
@@ -32016,6 +32117,7 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
+  &_swigt__p_asat__stream_args_t,
   &_swigt__p_asat_transcv_ff,
   &_swigt__p_boost__shared_ptrT_asat_transcv_ff_t,
   &_swigt__p_boost__shared_ptrT_gr_basic_block_t,
@@ -32040,8 +32142,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gr_sync_decimator,
   &_swigt__p_gr_sync_interpolator,
   &_swigt__p_gr_top_block,
-  &_swigt__p_gr_vector_const_void_star,
-  &_swigt__p_gr_vector_void_star,
   &_swigt__p_gruel__rt_status_t,
   &_swigt__p_int,
   &_swigt__p_long_long,
@@ -32078,7 +32178,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_uhd__sensor_value_t,
   &_swigt__p_uhd__spi_config_t,
   &_swigt__p_uhd__spi_iface,
-  &_swigt__p_uhd__stream_args_t,
   &_swigt__p_uhd__stream_cmd_t,
   &_swigt__p_uhd__time_spec_t,
   &_swigt__p_uhd__tune_request_t,
@@ -32096,6 +32195,7 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_asat__stream_args_t[] = {  {&_swigt__p_asat__stream_args_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_asat_transcv_ff[] = {  {&_swigt__p_asat_transcv_ff, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_asat_transcv_ff_t[] = {  {&_swigt__p_boost__shared_ptrT_asat_transcv_ff_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr_basic_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr_basic_block_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -32120,8 +32220,6 @@ static swig_cast_info _swigc__p_gr_top_block[] = {{&_swigt__p_gr_top_block, 0, 0
 static swig_cast_info _swigc__p_gr_basic_block[] = {  {&_swigt__p_asat_transcv_ff, _p_asat_transcv_ffTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_basic_block, 0, 0, 0},  {&_swigt__p_gr_hier_block2, _p_gr_hier_block2To_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_block, _p_gr_blockTo_p_gr_basic_block, 0, 0},  {&_swigt__p_gr_top_block, _p_gr_top_blockTo_p_gr_basic_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_block[] = {  {&_swigt__p_asat_transcv_ff, _p_asat_transcv_ffTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_block, 0, 0},  {&_swigt__p_gr_sync_block, _p_gr_sync_blockTo_p_gr_block, 0, 0},  {&_swigt__p_gr_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr_sync_block[] = {  {&_swigt__p_asat_transcv_ff, _p_asat_transcv_ffTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_decimator, _p_gr_sync_decimatorTo_p_gr_sync_block, 0, 0},  {&_swigt__p_gr_sync_block, 0, 0, 0},  {&_swigt__p_gr_sync_interpolator, _p_gr_sync_interpolatorTo_p_gr_sync_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_vector_const_void_star[] = {  {&_swigt__p_gr_vector_const_void_star, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr_vector_void_star[] = {  {&_swigt__p_gr_vector_void_star, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gruel__rt_status_t[] = {  {&_swigt__p_gruel__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
@@ -32158,7 +32256,6 @@ static swig_cast_info _swigc__p_uhd__rx_metadata_t[] = {  {&_swigt__p_uhd__rx_me
 static swig_cast_info _swigc__p_uhd__sensor_value_t[] = {  {&_swigt__p_uhd__sensor_value_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uhd__spi_config_t[] = {  {&_swigt__p_uhd__spi_config_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uhd__spi_iface[] = {  {&_swigt__p_uhd__spi_iface, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_uhd__stream_args_t[] = {  {&_swigt__p_uhd__stream_args_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uhd__stream_cmd_t[] = {  {&_swigt__p_uhd__stream_cmd_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uhd__time_spec_t[] = {  {&_swigt__p_uhd__time_spec_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_uhd__tune_request_t[] = {  {&_swigt__p_uhd__tune_request_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -32176,6 +32273,7 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
+  _swigc__p_asat__stream_args_t,
   _swigc__p_asat_transcv_ff,
   _swigc__p_boost__shared_ptrT_asat_transcv_ff_t,
   _swigc__p_boost__shared_ptrT_gr_basic_block_t,
@@ -32200,8 +32298,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gr_sync_decimator,
   _swigc__p_gr_sync_interpolator,
   _swigc__p_gr_top_block,
-  _swigc__p_gr_vector_const_void_star,
-  _swigc__p_gr_vector_void_star,
   _swigc__p_gruel__rt_status_t,
   _swigc__p_int,
   _swigc__p_long_long,
@@ -32238,7 +32334,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_uhd__sensor_value_t,
   _swigc__p_uhd__spi_config_t,
   _swigc__p_uhd__spi_iface,
-  _swigc__p_uhd__stream_args_t,
   _swigc__p_uhd__stream_cmd_t,
   _swigc__p_uhd__time_spec_t,
   _swigc__p_uhd__tune_request_t,

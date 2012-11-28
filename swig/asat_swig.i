@@ -1,5 +1,6 @@
 /* -*- c++ -*- */
 
+
 #define ASAT_API
 
 //suppress 319. No access specifier given for base class name (ignored).  <-- COPIED FROM UHD_SWIG.I
@@ -13,7 +14,7 @@
 // BLOCK HEADERS
 
 %{
-#include "asat_transcv_ff.h"
+#include <asat_transcv_ff.h>
 %}
 
 // USED TYPES

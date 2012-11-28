@@ -2003,13 +2003,6 @@ class asat_transcv_ff_sptr(object):
         """set_user_register(self, uint8_t addr, uint32_t data, size_t mboard = 0)"""
         return _asat_swig.asat_transcv_ff_sptr_set_user_register(self, *args, **kwargs)
 
-    def work(self, *args, **kwargs):
-        """
-        work(self, int noutput_items, gr_vector_const_void_star input_items, 
-            gr_vector_void_star output_items) -> int
-        """
-        return _asat_swig.asat_transcv_ff_sptr_work(self, *args, **kwargs)
-
     def history(self):
         """history(self) -> unsigned int"""
         return _asat_swig.asat_transcv_ff_sptr_history(self)
@@ -2113,6 +2106,24 @@ asat_transcv_ff_sptr_swigregister(asat_transcv_ff_sptr)
 
 asat_transcv_ff_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id ())
 
+class stream_args_t(object):
+    """Proxy of C++ asat::stream_args_t class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, cpu = "", otw = ""): 
+        """__init__(self, string cpu = "", string otw = "") -> stream_args_t"""
+        this = _asat_swig.new_stream_args_t(cpu, otw)
+        try: self.this.append(this)
+        except: self.this = this
+    cpu_format = _swig_property(_asat_swig.stream_args_t_cpu_format_get, _asat_swig.stream_args_t_cpu_format_set)
+    otw_format = _swig_property(_asat_swig.stream_args_t_otw_format_get, _asat_swig.stream_args_t_otw_format_set)
+    args = _swig_property(_asat_swig.stream_args_t_args_get, _asat_swig.stream_args_t_args_set)
+    channels = _swig_property(_asat_swig.stream_args_t_channels_get, _asat_swig.stream_args_t_channels_set)
+    __swig_destroy__ = _asat_swig.delete_stream_args_t
+    __del__ = lambda self : None;
+stream_args_t_swigregister = _asat_swig.stream_args_t_swigregister
+stream_args_t_swigregister(stream_args_t)
+
 
 def find_devices_raw(*args, **kwargs):
   """find_devices_raw(device_addr_t dev_addr = uhd::device_addr_t()) -> device_addrs_t"""
@@ -2122,13 +2133,6 @@ def get_version_string():
   """get_version_string() -> string"""
   return _asat_swig.get_version_string()
 
-
-def transcv_ff(*args):
-  """
-    transcv_ff(device_addr_t device_addr, io_type_t io_type, size_t num_channels) -> asat_transcv_ff_sptr
-    transcv_ff(device_addr_t device_addr, uhd::stream_args_t stream_args) -> asat_transcv_ff_sptr
-    """
-  return _asat_swig.transcv_ff(*args)
 cvar = _asat_swig.cvar
 ALL_MBOARDS = cvar.ALL_MBOARDS
 

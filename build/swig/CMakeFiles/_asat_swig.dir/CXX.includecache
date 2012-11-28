@@ -92,7 +92,7 @@ functional
 iterator
 -
 asat_transcv_ff.h
-/home/joel/GNURadio/SRC/gnuradio/gr-asat/build/swig/asat_transcv_ff.h
+-
 limits.h
 -
 stdint.h

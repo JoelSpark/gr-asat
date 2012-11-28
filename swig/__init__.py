@@ -24,7 +24,7 @@ This is the GNU Radio ASAT package. It is the interface to the ASAT
 library to connect to and send and receive data between the Ettus
 Research, LLC product line.
 '''
-
+from gnuradio import uhd
 ########################################################################
 # Prepare asat_swig module to make it more pythonic
 ########################################################################
@@ -62,7 +62,7 @@ def _prepare_asat_swig():
     setattr(asat_swig, 'device_addr_t', device_addr_t)
 
     #make the streamer args take **kwargs on init
-    class stream_args_t(asat_swig.stream_args_t):
+    class stream_args_t(uhd.stream_args_t):
         def __init__(self, *args, **kwargs):
             super(stream_args_t, self).__init__(*args)
             for key, val in kwargs.iteritems():
@@ -96,7 +96,11 @@ def _prepare_asat_swig():
         return map(to_pythonized_dev_addr, asat_swig.find_devices_raw(*args, **kwargs))
     setattr(asat_swig, 'find_devices', find_devices)
 
-    #Cast constructor args (FIXME swig handle overloads?)
+    #Aliases for deprecated constructors
+    setattr(asat_swig, 'single_usrp_source', asat_swig.asat_transcv_ff)
+    setattr(asat_swig, 'multi_usrp_source', asat_swig.asat_transcv_ff)
+
+#Cast constructor args (FIXME swig handle overloads?)
     for attr in ('transcv_ff'):
         def constructor_factory(old_constructor):
             def constructor_interceptor(*args, **kwargs):
@@ -116,11 +120,6 @@ def _prepare_asat_swig():
                 return old_constructor(*args)
             return constructor_interceptor
         setattr(asat_swig, attr, constructor_factory(getattr(asat_swig, attr)))
-
-    #Aliases for deprecated constructors
-    setattr(asat_swig, 'single_usrp_source', asat_swig.transcv_ff)
-    setattr(asat_swig, 'multi_usrp_source', asat_swig.transcv_ff)
-
 
 ########################################################################
 # Initialize this module with the contents of asat_swig
