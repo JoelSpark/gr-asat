@@ -41,7 +41,6 @@ link_directories(${Boost_LIBRARY_DIRS})
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-
 list(APPEND asat_libs
     gnuradio-core
     gnuradio-uhd

@@ -218,7 +218,7 @@ SWIG_VERSION:STRING=2.0.4
 _asat_swig_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;general;gnuradio-asat;general;uhd;
 
 //Dependencies for the target
-gnuradio-asat_LIB_DEPENDS:STATIC=general;gnuradio-core;general;gnuradio-uhd;
+gnuradio-asat_LIB_DEPENDS:STATIC=general;uhd;general;gnuradio-core;general;gnuradio-uhd;
 
 //Value Computed by CMake
 gr-asat_BINARY_DIR:STATIC=/home/joel/GNURadio/SRC/gnuradio/gr-asat/build

@@ -139,8 +139,8 @@ swig/preinstall:
 # Target rules for target swig/CMakeFiles/_asat_swig.dir
 
 # All Build rule for target.
-swig/CMakeFiles/_asat_swig.dir/all: lib/CMakeFiles/gnuradio-asat.dir/all
 swig/CMakeFiles/_asat_swig.dir/all: swig/CMakeFiles/_asat_swig_swig_tag.dir/all
+swig/CMakeFiles/_asat_swig.dir/all: lib/CMakeFiles/gnuradio-asat.dir/all
 	$(MAKE) -f swig/CMakeFiles/_asat_swig.dir/build.make swig/CMakeFiles/_asat_swig.dir/depend
 	$(MAKE) -f swig/CMakeFiles/_asat_swig.dir/build.make swig/CMakeFiles/_asat_swig.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/joel/GNURadio/SRC/gnuradio/gr-asat/build/CMakeFiles  1 2 3

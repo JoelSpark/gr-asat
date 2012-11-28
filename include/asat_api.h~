@@ -30,7 +30,4 @@
 #  define ASAT_API __GR_ATTR_IMPORT __attribute__ ((visibility ("default")))
 #endif
 
-#ifndef ASAT_API
-#define ASAT_API __attribute__ ((visibility("default")))
-
 #endif /* INCLUDED_ASAT_API_H */

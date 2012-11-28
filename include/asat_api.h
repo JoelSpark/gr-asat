@@ -25,9 +25,9 @@
 #include <gruel/attributes.h>
 
 #ifdef gnuradio_asat_EXPORTS
-#  define ASAT_API __GR_ATTR_EXPORT __attribute__ ((visibility ("default")))
+#  define ASAT_API __GR_ATTR_EXPORT
 #else
-#  define ASAT_API __GR_ATTR_IMPORT __attribute__ ((visibility ("default")))
+#  define ASAT_API __GR_ATTR_IMPORT
 #endif
 
 #endif /* INCLUDED_ASAT_API_H */

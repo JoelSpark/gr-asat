@@ -50,7 +50,7 @@ list(APPEND asat_libs
 )
 
 add_library(gnuradio-asat SHARED asat_transcv_ff.cc)
-target_link_libraries(gnuradio-asat ${asat_libs})
+target_link_libraries(gnuradio-asat uhd ${asat_libs})
 
 ########################################################################
 # Install built library files
